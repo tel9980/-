@@ -1,0 +1,5 @@
+{
+  "name": "Copy of OxiTrack Pro - 氧化厂管理系统",
+  "description": "专为中小型氧化加工厂设计的全能ERP系统。功能涵盖：来料入库、生产跟踪、委外加工、智能送货单（三联单）、财务对账、局域网多端同步。支持 Windows/Mac 直接运行，也支持 Docker 一键部署。",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  oxitrack:
+    build: .
+    image: oxitrack-pro
+    container_name: oxitrack
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount a local 'data' folder to the container's data directory
+      # This ensures your inventory and settings persist even if you delete the container
+      - ./data:/data
+    restart: unless-stopped
+    environment:
+      - IS_DOCKER=true
+      - DATA_DIR=/data
